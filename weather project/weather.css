@@ -1,0 +1,96 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: system-ui;
+}
+body {
+    /*set background image*/
+    background-image: url("./thanoj.jpeg");
+    background-size: cover; 
+    background-position: center;
+    color:rgb(19, 18, 18);
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 90vh;
+}
+
+.weather-card {
+    background-color: rgba(225, 216, 216, 0.95);
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.weather-card:hover {
+    transform: scale(1.05);
+}
+
+#h1 {
+    margin:auto;
+}
+
+#city-name {
+    padding: 15px 15px 15px 5px;
+    width: 300px;
+    margin: 30px 10px 10px 10px;
+    border: 1px solid rgb(14, 13, 13);
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#cname{
+    margin-top: 30px;
+    font-size: 30px;
+    border-bottom: 1px solid black;
+    padding-bottom: 5px;
+}
+
+#city-name::placeholder {
+    color: rgb(16, 16, 16);
+}
+
+#city-btn {
+    padding: 10px;
+    margin: 25px 10px 0px 10px;
+    background-color: #101011;
+    color: #e7dcdc;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+#city-btn:hover {
+    background-color: #1b1b1b;
+}
+
+#date {
+    font-weight: bold;
+    margin-top: 10px;
+    font-size: 14px;
+    color: rgb(0, 0, 0);
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#description {
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+#wind-speed {
+    font-weight: bold;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+}

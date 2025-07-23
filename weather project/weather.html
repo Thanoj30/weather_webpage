@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+
+<head>
+	<link rel="stylesheet" href="weather.css">
+	<title>Weather App</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="weather-card">
+			<h1 style="color: rgb(17, 18, 17);" id="h1">
+				Weather applicaiton
+			</h1>
+			<input type="text" id="city-name"
+				placeholder="Enter city name">
+			<br/>
+			<button id="city-btn">
+					Get Weather
+			</button>
+		</div>
+		<div id="weather-info"
+			class="animate__animated animate__fadeIn">
+			<p id="loding"></p>
+			<h3 id="cname"></h3>
+			<p id="date"></p> 
+			<p id="temperature"></p>
+			<p id="description"></p>
+			<p id="wind-speed"></p>
+		</div>
+	</div>
+	<script src=
+"https://code.jquery.com/jquery-3.6.0.min.js">
+	</script>
+	<script src=
+"https://momentjs.com/downloads/moment.min.js">
+	</script>
+	<script src="weather.js"></script>
+</body>
+
+</html>
