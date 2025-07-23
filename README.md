@@ -11,7 +11,7 @@ A simple and responsive weather webpage that allows users to search for current 
 
 ## 📸 Screenshots
 
-![Weather Screenshot](weather project/weather_report_ss.jpeg)
+weather project/weather_report_ss.jpeg
 
 ## 🛠️ Technologies Used
 
