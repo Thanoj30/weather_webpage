@@ -8,7 +8,6 @@ submitBtn.addEventListener('click', function () {
 	const cityName = document.getElementById('city-name').value;
 	weatherFn(cityName);
 });
-
 async function weatherFn(cName) {
 	const temp =
 		`${url}?q=${cName}&appid=${apiKey}&units=metric`;
@@ -24,7 +23,6 @@ async function weatherFn(cName) {
 		console.error('Error fetching weather data:', error);
 	}
 }
-
 function weatherShowFn(data) {
 	$('#cname').text(data.name);
 	$('#date').text(moment().
@@ -38,3 +36,4 @@ function weatherShowFn(data) {
 	$('#weather-info').fadeIn();
 
 }
+
