@@ -9,10 +9,6 @@ A simple and responsive weather webpage that allows users to search for current 
 - 🎨 Clean and responsive UI
 - 📱 Mobile-friendly design
 
-## 📸 Screenshots
-
-weather project/weather_report_ss.jpeg
-
 ## 🛠️ Technologies Used
 
 - HTML5
