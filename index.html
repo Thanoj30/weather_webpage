@@ -1,39 +1,89 @@
 <!DOCTYPE html>
-<head>
-	<link rel="stylesheet" href="weather.css">
-	<title>Weather App</title>
-	<meta name="google-site-verification" content="zjFsGS4svSmH7lcw-w_QZQHobScaBe5gC9J_YvyfrQ8" />
-</head>
-<body>
-	<div class="container">
-		<div class="weather-card">
-			<h1 style="color: rgb(17, 18, 17);" id="h1">
-				Weather application
-			</h1>
-			<input type="text" id="city-name"
-				placeholder="Enter city name">
-			<br/>
-			<button id="city-btn">
-					Get Weather
-			</button>
-		</div>
-		<div id="weather-info"
-			class="animate__animated animate__fadeIn">
-			<p id="loding"></p>
-			<h3 id="cname"></h3>
-			<p id="date"></p> 
-			<p id="temperature"></p>
-			<p id="description"></p>
-			<p id="wind-speed"></p>
-		</div>
-	</div>
-	<script src=
-"https://code.jquery.com/jquery-3.6.0.min.js">
-	</script>
-	<script src=
-"https://momentjs.com/downloads/moment.min.js">
-	</script>
-	<script src="weather.js"></script>
-</body>
-</html>
+<html lang="en">
 
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Website Title -->
+    <title>Thanoj Weather Forecast App</title>
+
+    <!-- SEO Description -->
+    <meta name="description"
+        content="Live weather forecast application showing temperature, humidity, wind speed, and weather conditions for cities around the world.">
+
+    <!-- SEO Keywords -->
+    <meta name="keywords"
+        content="weather app, weather forecast, live weather, temperature, humidity, climate, weather website">
+
+    <!-- Author -->
+    <meta name="author" content="Thanoj">
+
+    <!-- Google Verification -->
+    <meta name="google-site-verification"
+        content="zjFsGS4svSmH7lcw-w_QZQHobScaBe5gC9J_YvyfrQ8" />
+
+    <!-- Website Logo / Favicon -->
+    <link rel="icon" type="image/png" href="logo.png">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="weather.css">
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="weather-card">
+
+            <h1 style="color: rgb(17, 18, 17);" id="h1">
+                Weather Application
+            </h1>
+
+            <input type="text"
+                id="city-name"
+                placeholder="Enter city name">
+
+            <br />
+
+            <button id="city-btn">
+                Get Weather
+            </button>
+
+        </div>
+
+        <div id="weather-info"
+            class="animate__animated animate__fadeIn">
+
+            <p id="loding"></p>
+
+            <h3 id="cname"></h3>
+
+            <p id="date"></p>
+
+            <p id="temperature"></p>
+
+            <p id="description"></p>
+
+            <p id="wind-speed"></p>
+
+        </div>
+
+    </div>
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js">
+    </script>
+
+    <!-- Moment.js -->
+    <script src="https://momentjs.com/downloads/moment.min.js">
+    </script>
+
+    <!-- JavaScript -->
+    <script src="weather.js"></script>
+
+</body>
+
+</html>
