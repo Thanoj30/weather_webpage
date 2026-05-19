@@ -1,5 +1,5 @@
 const url = 'https://api.openweathermap.org/data/2.5/weather';
-const apiKey = 'YOUR_API_KEY';
+const apiKey = 'f00c38e0279b7bc85480c3fe775d518c';
 
 const submitBtn = document.getElementById('city-btn');
 const locationBtn = document.getElementById('location-btn');
@@ -12,7 +12,7 @@ submitBtn.addEventListener('click', function () {
 	}
 });
 
-// LOCATION BUTTON
+// LOCATION SEARCH
 locationBtn.addEventListener('click', function () {
 	if (navigator.geolocation) {
 		navigator.geolocation.getCurrentPosition(
@@ -30,7 +30,7 @@ locationBtn.addEventListener('click', function () {
 	}
 });
 
-// CITY WEATHER
+// WEATHER BY CITY
 async function weatherByCity(cName) {
 	const apiURL =
 		`${url}?q=${cName}&appid=${apiKey}&units=metric`;
@@ -38,7 +38,7 @@ async function weatherByCity(cName) {
 	fetchWeather(apiURL);
 }
 
-// COORDINATES WEATHER
+
 async function weatherByCoords(lat, lon) {
 	const apiURL =
 		`${url}?lat=${lat}&lon=${lon}&appid=${apiKey}&units=metric`;
@@ -62,7 +62,7 @@ async function fetchWeather(apiURL) {
 	}
 }
 
-// DISPLAY DATA
+
 function weatherShowFn(data) {
 	$('#cname').text(data.name + ", " + data.sys.country);
 	$('#date').text(moment().format('MMMM Do YYYY, h:mm:ss A'));
